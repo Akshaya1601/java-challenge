@@ -4,6 +4,7 @@ import java.time.Instant;
 import java.util.UUID;
 
 public class EmployeeModel implements Employee {
+
     private UUID uuid;
     private String firstName;
     private String lastName;
@@ -18,6 +19,11 @@ public class EmployeeModel implements Employee {
     @Override
     public UUID getUuid() {
         return uuid;
+    }
+
+    @Override
+    public void setUuid(UUID uuid) {
+        this.uuid = uuid;
     }
 
     @Override
@@ -81,7 +87,7 @@ public class EmployeeModel implements Employee {
     }
 
     @Override
-    public string getEmail() {
+    public String getEmail() {
         return email;
     }
 
