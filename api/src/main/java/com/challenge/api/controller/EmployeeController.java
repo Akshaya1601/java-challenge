@@ -48,8 +48,7 @@ public class EmployeeController {
         try {
             return employeeService.getEmployeeByUuid(uuid);
         } catch (NoSuchElementException exception) {
-            throw new ResponseStatusException(
-                    HttpStatus.NOT_FOUND, exception.getMessage(), exception);
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, exception.getMessage(), exception);
         }
     }
 

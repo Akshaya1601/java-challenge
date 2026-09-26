@@ -40,8 +40,7 @@ public class EmployeeService {
         Employee employee = employees.get(uuid);
 
         if (employee == null) {
-            throw new NoSuchElementException(
-                    "Employee with UUID " + uuid + " not found");
+            throw new NoSuchElementException("Employee with UUID " + uuid + " not found");
         }
 
         return employee;
@@ -53,8 +52,7 @@ public class EmployeeService {
         employee.setUuid(UUID.randomUUID());
         employee.setFirstName(request.getFirstName());
         employee.setLastName(request.getLastName());
-        employee.setFullName(
-                request.getFirstName() + " " + request.getLastName());
+        employee.setFullName(request.getFirstName() + " " + request.getLastName());
         employee.setSalary(request.getSalary());
         employee.setAge(request.getAge());
         employee.setJobTitle(request.getJobTitle());
