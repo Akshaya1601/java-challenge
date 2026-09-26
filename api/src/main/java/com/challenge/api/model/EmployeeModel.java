@@ -3,6 +3,11 @@ package com.challenge.api.model;
 import java.time.Instant;
 import java.util.UUID;
 
+/**
+ * Concrete implementation of the Employee domain model.
+ *
+ * This class implements the provided Employee interface and represents the employee data returned by the API.
+ */
 public class EmployeeModel implements Employee {
 
     private UUID uuid;

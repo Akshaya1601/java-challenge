@@ -1,3 +1,6 @@
+## [Brief summary of implementation](summary.md)
+-----
+
 # ReliaQuest's Entry-Level Java Challenge
 
 Please keep the following in mind while working on this challenge:

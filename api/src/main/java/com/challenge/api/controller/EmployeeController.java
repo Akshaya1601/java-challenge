@@ -18,6 +18,8 @@ import org.springframework.web.server.ResponseStatusException;
 
 /**
  * Fill in the missing aspects of this Spring Web REST Controller. Don't forget to add a Service layer.
+ *
+ * The controller is responsible for HTTP request/response handling and delegates employee operations to EmployeeService.
  */
 @RestController
 @RequestMapping("/api/v1/employee")
